@@ -160,6 +160,9 @@ class NonDeltaTextInputService extends TextInputService with TextInputClient {
   void connectionClosed() {}
 
   @override
+  bool onFocusReceived() => false;
+
+  @override
   void insertTextPlaceholder(Size size) {}
 
   @override
